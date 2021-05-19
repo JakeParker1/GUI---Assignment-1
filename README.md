@@ -43,7 +43,7 @@ global Slider1;
 Param = get(Slider1,"value");
 
 %Put value retrieved from slider onto the GUI
-uicontol("Style","text,"string", num2str(Param), "position", ...
+uicontol("Style","text","string", num2str(Param), "position", ...
     [460 55 60 20]);
     
 %Plotting on the graph
