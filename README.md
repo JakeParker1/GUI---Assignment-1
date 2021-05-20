@@ -15,39 +15,39 @@ h = subplot('Position', [-3500 3500 0 3000]);
 
 %First joint angle label
 uicontrol('style',"text","String","First Joint Angle","Position", ...
-    [150 50 90 30]);
+    [50 100 100 30]);
 
 %Second joint angle label
 uicontrol("Style","text","String","Second Joint Angle","Position", ...
-    [350 50 90 30]);
+    [200 100 100 30]);
 
 %Third joint angle label
 uicontrol("Style","text","String","Third Joint Angle", "Position", ...
-    [450 50 90 30]);
+    [350 100 100 30]);
 
 %Fourth joint angle label
 uicontrol("Style","text","String","Fourth Joint Angle","Position", ...
-    [600 50 90 30])
+    [500 100 100 30])
 
 %Add run button 
 Button = uicontrol("Style","pushbutton","string","run","position", ...
-    [250 50 100 30], "callback", @PlotGUI);
+    [625 100 50 30], "callback", @PlotGUI);
 
 %Add slider for first joint
 Slider1 = uicontrol("Style","slider","Min",0,"Max",180,"Position", ...
-    [250 50 100 30]);
+    [50 50 100 30]);
 
 %Add slider for the second joint
 Slider2 = uicontrol("Style","slider","Min",0,"Max",120,"Position", ...
-    [350 50 100 30]);
+    [200 50 100 30]);
 
 %Add slider for third joint
 Slider3 = uicontrol("Style","slider","Min",0,"max",120,"position", ...
-    [450 50 200 30]);
+    [350 50 100 30]);
 
 %Add slider for fourth joint
 Slider4 = uicontrol("Style","slider","Min",0,"Max",120,"position", ...
-    [600 50 200 30]);
+    [500 50 100 30]);
 %Plotting the GUI
 function PlotGUI(hObject,eventdata)
 
