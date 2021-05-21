@@ -1,5 +1,7 @@
 # GUI---Assignment-1
 
+%GUI Operator Control Panel 
+
 %Clear workspace area and command 
 clc;
 clear;
@@ -12,6 +14,10 @@ figure('Position',[0 0 700 500], 'name', 'SimpleGUI', 'NumberTitle', 'off');
 
 %Make subplot to hold plot 
 h = subplot('Position', [-3500 3500 0 3000]);
+
+%Title
+uicontrol("Style","text","String","Operator Control Panel", "Position", ...
+    [250 400 200 30]);
 
 %First joint angle label
 uicontrol('style',"text","String","First Joint Angle","Position", ...
