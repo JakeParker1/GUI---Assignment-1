@@ -2,6 +2,8 @@
 
 %GUI Operator Control Panel 
 
+%GUI Operator Control Panel 
+
 %Clear workspace area and command 
 clc;
 clear;
@@ -60,16 +62,34 @@ function PlotGUI(hObject,eventdata)
 %Handle to Slider1
 global Slider1;
 
-%Retrieves value from the slider using parameters
-Param = get(Slider1,"value");
+%Retrieves value from Slider1 using parameters
+Param1 = get(Slider1,"value");
+
+%Handle to Slider2
+global Slider2;
+
+%Retrieves value from the Slider2 using parameters
+Param2 = get(Slider2,"value");
+
+%Handle to Slider3
+global Slider3;
+
+%Retrieves value from the Slider3 using parameters
+Param3 = get(Slider3,"value");
+
+%Handle to Slider4
+global Slider4;
+
+%Retrieves value from the Slider4 using parameters
+Param4 = get(Slider4,"value");
 
 %Put value retrieved from slider onto the GUI
-uicontol("Style","text","string", num2str(Param), "position",...
+uicontol("Style","text","string", num2str(Param1), "position",...
     [460 55 60 20]);
     
 %Plotting on the graph
 x = linspace(0, 10, 1000);
-k = Param;
+k = Param1, Param2, Param3, Param4;
 y = sin(k*x);
 plot(x,y);
 
