@@ -2,8 +2,6 @@
 
 %GUI Operator Control Panel 
 
-%GUI Operator Control Panel 
-
 %Clear workspace area and command 
 clc;
 clear;
@@ -89,8 +87,17 @@ uicontol("Style","text","string", num2str(Param1), "position",...
     
 %Plotting on the graph
 x = linspace(0, 10, 1000);
-k = Param1, Param2, Param3, Param4;
-y = sin(k*x);
-plot(x,y);
+k1 = Param1;
+y1 = sin(k1*x);
+hold on;
+k2 = Param2;
+y2 = sin(k2*x);
+hold on;
+k3 = Param3;
+y3 = sin(k3*x);
+hold on;
+k4 = Param4;
+y4 = sin(k4*x);
+plot(x,y1);
 
 end
